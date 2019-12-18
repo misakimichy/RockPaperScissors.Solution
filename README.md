@@ -9,3 +9,9 @@ Paper v. Scissors = Scissors wins
 Rock vs Rock = Draw
 Scissors vs Scissors = Draw
 Paper vs Paper = Draw
+
+* User is able to enter Rock/Scissors/Paper.
+* If user enter invalid input  they get message.
+* Otherwise computer returns random choice.
+* User gets an outout of game.
+* User is able to repeat game or quit. 

@@ -11,8 +11,8 @@ namespace RPS.Models
                 return "Draw";
             } else {
                 Dictionary<string, string> playerDict = new Dictionary<string, string>() {};
-                playerDict.Add(choice1, "Player1");
-                playerDict.Add(choice2, "Player2");
+                playerDict.Add(choice1, "Player");
+                playerDict.Add(choice2, "Computer");
                 string[] choiceList = {choice1, choice2};
                 Array.Sort(choiceList);
 
@@ -30,6 +30,14 @@ namespace RPS.Models
                 }
             }
             return "";
+        }
+
+        public static string RandomizeChoice()
+        {
+            List<string> listOfChoices = new List<string>{"Rock", "Paper", "Scissors"};
+            Random rand = new Random();
+            string randomResult  = listOfChoices[rand.Next(0, 3)];
+            return randomResult;
         }
     } 
 }
