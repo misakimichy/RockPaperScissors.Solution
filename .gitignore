@@ -1,4 +1,3 @@
-RPS/bin/
-RPS/obj
-RPS.Tests/obj
-RPS.Tests/bin
+bin/
+obj/
+.vscode
